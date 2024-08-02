@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eCommerce</title>
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+  <!-- Style css -->
+  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Barra de Navegación -->
+  <header id="menu-container"></header>
+  <main>
+    <!-- Sección del Banner Slider-->
+    <section class="slider-section open-sans-principal">
+      <div class="slider-container">
+        <div class="slider">
+          <img src="./img/banner_accesories.png" alt="Imagen 1">
+          <img src="./img/banner_drones.png" alt="Imagen 2">
+          <img src="./img/banner_watches.png" alt="Imagen 3">
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+    </section>
+    <!-- Sección de las Categorias -->
+    <section class="categories-section open-sans-principal">
+      <h2>Nuestro Top de Categorías</h2>
+      <div class="categories-container">
+        <div class="category">
+          <a href="./smartphones.html">
+            <span class="material-symbols-outlined soft-grey md-60">smartphone</span>
+            <h3>Smartphones</h3>         
+          </a>
+        </div>
+        <div class="category">
+          <a href="./notebooks.html">
+            <span class="material-symbols-outlined soft-grey md-60">laptop_windows</span>
+            <h3>Notebooks</h3>
+          </a>
+        </div>
+        <div class="category">
+          <a href="./watches.html">
+            <span class="material-symbols-outlined soft-grey md-60">watch</span>
+            <h3>Watches</h3>
+          </a>
+        </div>
+        <div class="category">
+          <a href="./tablets.html">
+            <span class="material-symbols-outlined soft-grey md-60">tablet</span>
+            <h3>Tablets</h3>
+          </a>
+        </div>
+        <div class="category">
+          <a href="./games.html">
+            <span class="material-symbols-outlined soft-grey md-60">sports_esports</span>
+            <h3>Games</h3>
+          </a>
+        </div>
+        <div class="category">
+          <a href="./accesories.html">
+            <span class="material-symbols-outlined soft-grey md-60">devices_other</span>
+            <h3>Accesorios</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Seccion de los Productos(nuevo ingresos) -->
+    <section class="products-section open-sans-principal">
+      <h2>Ultimos productos agregados</h2>
+      <div class="products-container">
+      </div>
+  </section>
+  </main>
+  <!-- Pie de página -->
+  <footer id="footer-container"></footer>
+  <script src="js/script.js"></script>
+  <script src="js/menuFooterLoader.js"></script>
+</body>
+</html>
